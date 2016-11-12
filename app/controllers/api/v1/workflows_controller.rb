@@ -1,6 +1,6 @@
 module Api
     module V1
-        class WorkflowsController < ApplicationController
+        class WorkflowsController < ApiController
             def index
                 workflows = Workflow.order('name asc').all
                 render json: workflows
