@@ -25,6 +25,7 @@ services:
     depends_on:
       - db
 
+    entrypoint: /baton/docker-entry.sh
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
       - .:/baton
